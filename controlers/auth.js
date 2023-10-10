@@ -50,7 +50,7 @@ const renewToken = async (req, res = response) => {
   const { uid, name } = req
 
   const token = await generateToken(uid, name)
-  res.json({ ok: true, token })
+  res.json({ ok: true, uid, name, token })
 }
 
 module.exports = {

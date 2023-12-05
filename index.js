@@ -21,7 +21,7 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/events'))
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
+  res.sendFile(__dirname + '/public/dist/index.html')
 })
 
 // Conexión a la base de datos')
